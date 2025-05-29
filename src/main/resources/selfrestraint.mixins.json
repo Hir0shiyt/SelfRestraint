@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "net.hir0shiyt.selfrestraint.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ExampleMixin",
+		"MixinPlayerEntity",
+		"ServerPlayerEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

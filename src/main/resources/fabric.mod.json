@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "selfrestraint",
+	"version": "${version}",
+	"name": "SelfRestraint",
+	"description": "Pretending to make life easier with skill-based mods",
+	"authors": [
+		"hir0shiyt & Jesus Christ!"
+	],
+	"contact": {
+		"homepage": "https://curseforge.com/minecraft/mc-mods/self-restraint",
+		"sources": "https://github.com/Hir0shiyt/Self-Restraint"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/selfrestraint/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hir0shiyt.selfrestraint.SelfRestraint"
+		],
+		"fabric-datagen": [
+			"net.hir0shiyt.selfrestraint.SelfRestraintDataGenerator"
+		],
+		"client": [
+			"net.hir0shiyt.selfrestraint.SelfRestraintClient"
+		]
+	},
+	"mixins": [
+		"selfrestraint.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
