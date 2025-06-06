@@ -41,7 +41,7 @@ public class ModifierScreen extends Screen {
 
         // Build the texts
         String speedText = "Speed Modifier : " + speedPercent + "%";
-        String jumpText = "Jump Modifier : " + (jumpPercent >= 20 ? jumpPercent + "%" : "untoggled");
+        String jumpText = "Jump Modifier : " + (jumpPercent >= 49 ? "Limiter untoggled" : "Limiter toggled");
 
         // Draw texts at positions relative to GUI top-left (x, y)
         int textX = x + 20;  // 20 px from left border
@@ -76,7 +76,7 @@ public class ModifierScreen extends Screen {
         }));
 
         this.addDrawableChild(new LeverWidget(sliderX, sliderY2, 100, 15, limiter.getJumpLimiter(), value -> {
-            limiter.setJumpLimiter(value);
+            limiter.setJumpLimiter(value < 0.5f ? 0f : 1f);
         }));
     }
 }
