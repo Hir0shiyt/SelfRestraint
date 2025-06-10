@@ -38,8 +38,6 @@ public class SelfRestraint implements ModInitializer {
 									StatusEffectInstance jumpBoost = new StatusEffectInstance(
 											StatusEffects.JUMP_BOOST, 200, 1, false, true);
 									player.addStatusEffect(jumpBoost);
-									context.getSource().sendFeedback(() ->
-											Text.literal("Jump Boost applied! Try jumping."), false);
 								}
 								return 1;
 							})

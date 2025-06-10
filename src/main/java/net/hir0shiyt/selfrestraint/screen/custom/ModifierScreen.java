@@ -41,7 +41,7 @@ public class ModifierScreen extends Screen {
 
         // Build the texts
         String speedText = "Speed Modifier : " + speedPercent + "%";
-        String jumpText = "Jump Modifier : " + (jumpPercent >= 49 ? "Limiter untoggled" : "Limiter toggled");
+        String jumpText = "Jump Modifier : " + (jumpPercent >= 49 ? "Limiter toggled" : "Limiter untoggled");
 
         // Draw texts at positions relative to GUI top-left (x, y)
         int textX = x + 20;  // 20 px from left border

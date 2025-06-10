@@ -11,7 +11,7 @@
 		"homepage": "https://curseforge.com/minecraft/mc-mods/self-restraint",
 		"sources": "https://github.com/Hir0shiyt/Self-Restraint"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/selfrestraint/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -30,11 +30,13 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.14",
-		"minecraft": "~1.21.1",
+		"minecraft": "~1.21",
 		"java": ">=21",
 		"fabric-api": "*"
 	},
 	"suggests": {
+		"levelz" : "*",
+		"puffishskills" : "*",
 		"another-mod": "*"
 	}
 }

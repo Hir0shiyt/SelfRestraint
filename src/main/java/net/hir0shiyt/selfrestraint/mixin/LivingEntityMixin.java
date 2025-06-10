@@ -33,7 +33,6 @@ public abstract class LivingEntityMixin extends Entity {
             float adjustedJump = fullJump - (fullJump - baseJump) * limiter;
 
             cir.setReturnValue(adjustedJump);
-            player.sendMessage(Text.literal("Limiter active. Adjusted Jump: " + adjustedJump), true);
         }
     }
 
